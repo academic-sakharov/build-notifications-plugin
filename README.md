@@ -4,7 +4,8 @@ This is a plugin to enable build notifications through [Pushover][], [Telegram][
 
 ## How to build
 Java 8 required (doesn't work with Java 11).
-Set JAVA_HOME and build with maven (optionally add `-Dmaven.test.skip=true` to skip tests, seems they didn't work now)
+
+Set JAVA_HOME and build with maven (optionally add `-Dmaven.test.skip=true` to skip tests, seems they doesn't work now).
 
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
