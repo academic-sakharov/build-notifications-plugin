@@ -3,8 +3,15 @@
 This is a plugin to enable build notifications through [Pushover][], [Telegram][], [Slack][] or even [Boteco][].
 
 ## How to build
+Java 8 required (doesn't work with Java 11).
+Set JAVA_HOME and build with maven (optionally add `-Dmaven.test.skip=true` to skip tests, seems they didn't work now)
 
-Just execute a `mvn package` and upload the *hpi* package to your Jenkins instance.
+```
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+mvn -Dmaven.test.skip=true package
+```
+
+Upload the `target/build-notifications.hpi` package to your Jenkins instance.
 
 ## How to configure
 
